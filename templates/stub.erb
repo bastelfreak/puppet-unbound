@@ -3,3 +3,6 @@ stub-zone:
 <% @address.each do |addr| -%>
   stub-addr: <%= addr %>
 <% end -%>
+<% if @no_cache -%>
+  stub-no-cache: yes
+<% end -%>
